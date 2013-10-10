@@ -1,0 +1,8 @@
+{
+    "name": "reekoheek/jsonkit",
+     "autoload": {
+        "psr-0": {
+            "JsonKit": "src/"
+        }
+    }
+}
