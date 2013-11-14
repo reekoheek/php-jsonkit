@@ -1,6 +1,20 @@
 {
     "name": "reekoheek/jsonkit",
-     "autoload": {
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aprianto Pramana Putra",
+            "email": "apriantopramanaputra@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Ganesha",
+            "email": "reekoheek@gmail.com",
+            "homepage": "http://xinix.co.id",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
         "psr-0": {
             "JsonKit": "src/"
         }
