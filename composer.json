@@ -14,6 +14,9 @@
             "role": "Developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/reekoheek/php-jsonkit/issues"
+    },
     "autoload": {
         "psr-0": {
             "JsonKit": "src/"

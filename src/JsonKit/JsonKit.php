@@ -4,12 +4,15 @@ namespace JsonKit;
 
 class JsonKit {
 
-	private static function replaceObject($data) {
-        if (is_object($data)) {
-            if ($data instanceof \JsonKit\JsonSerializer) {
-                return $data->jsonSerialize();
+    private static function replaceObject($data) {
+        if ($data instanceof \JsonKit\JsonSerializer) {
+            $data = $data->jsonSerialize();
+            if (is_object($data)) {
+                $data = (array) $data;
             }
-        } elseif (is_array($data)) {
+        }
+
+        if (is_array($data)) {
             foreach ($data as $key => $value) {
                 $data[$key] = self::replaceObject($value);
             }
