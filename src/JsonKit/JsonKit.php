@@ -4,7 +4,7 @@ namespace JsonKit;
 
 class JsonKit {
 
-    private static function replaceObject($data) {
+    public static function replaceObject($data) {
         if ($data instanceof \JsonKit\JsonSerializer) {
             $data = $data->jsonSerialize();
             if (is_object($data)) {
