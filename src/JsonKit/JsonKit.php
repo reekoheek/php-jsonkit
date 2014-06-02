@@ -2,9 +2,10 @@
 
 namespace JsonKit;
 
-class JsonKit {
-
-    public static function replaceObject($data) {
+class JsonKit
+{
+    public static function replaceObject($data)
+    {
         if ($data instanceof \JsonKit\JsonSerializer) {
             $data = $data->jsonSerialize();
             if (is_object($data)) {
@@ -21,7 +22,8 @@ class JsonKit {
         return $data;
     }
 
-    public static function encode($data){
+    public static function encode($data)
+    {
         $jsonData = self::replaceObject($data);
         return json_encode($jsonData);
     }

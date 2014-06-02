@@ -2,6 +2,7 @@
 
 namespace JsonKit;
 
-interface JsonSerializer {
-	public function jsonSerialize();
+interface JsonSerializer
+{
+    public function jsonSerialize();
 }
