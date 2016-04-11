@@ -34,6 +34,6 @@ class JsonKit
         self::$stack = array();
 
         $jsonData = self::replaceObject($data);
-        return json_encode($jsonData);
+        return json_encode($jsonData, JSON_NUMERIC_CHECK);
     }
 }
